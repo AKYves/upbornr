@@ -84,7 +84,9 @@ create_metadata <- function(.file_path, is_excel = FALSE){
     month <- grep(str_extract(file_name, "[a-z]+$"),
                   month.name, ignore.case = TRUE)
     #start and end of the period
-    start_end <- str_extract(file_name, "\\d{2}-\\d{2}") %>%
+    start_end <- file_name %>%
+      str_remove("(-\\D+)$") %>%
+      str_extract(file_name, "(\\d{2}-\\d{2})$") %>%
       str_split("-", simplify = T) %>%
       as.vector()
 
