@@ -1,0 +1,28 @@
+Package: upbornr
+Type: Package
+Title: Update and View Borno Data using a UI
+Version: 0.0.0.9000
+Author: Yves Amevoin
+Maintainer: Yves Amevoin <amevoin@gmail.com>
+Description: Update and View Borno Data.
+License: MIT + file LICENCE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 3.4)
+Imports: 
+    plyr,
+    tidyr,
+    stringr,
+    pdftools,
+    magrittr,
+    purrr,
+    rlang,
+    dplyr,
+    miniUI,
+    shiny,
+    DT,
+    utils
+Suggests: 
+    testthat
