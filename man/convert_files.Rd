@@ -4,13 +4,15 @@
 \alias{convert_files}
 \title{Converting all pdfs withing a folder to a data.frame}
 \usage{
-convert_files(.folder_path, keepwide = FALSE)
+convert_files(.folder_path, keepwide = FALSE, is_excel = FALSE)
 }
 \arguments{
 \item{.folder_path}{A character vector of length one, path to the folder of
 files.}
 
 \item{keepwide}{Logical. Should we keep final wide or long format?}
+
+\item{is_excel}{Logical. Should we use excel folder or pdf folder.}
 }
 \value{
 A tibble

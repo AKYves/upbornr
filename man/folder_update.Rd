@@ -4,7 +4,8 @@
 \alias{folder_update}
 \title{Update historic data using a folder}
 \usage{
-folder_update(.folder_path, keepwide = FALSE, update = TRUE)
+folder_update(.folder_path, keepwide = FALSE, update = TRUE,
+  is_excel = FALSE)
 }
 \arguments{
 \item{.folder_path}{A character vector of length one, path to the foler with files}
@@ -12,6 +13,8 @@ folder_update(.folder_path, keepwide = FALSE, update = TRUE)
 \item{keepwide}{logical. Should we keep final long or wide format?}
 
 \item{update}{Logical. Update with historical data or not?}
+
+\item{is_excel}{Logical. Use a folder of excel files or not.}
 }
 \value{
 A tibble with updated data

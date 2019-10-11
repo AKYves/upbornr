@@ -23,6 +23,7 @@ Imports:
     miniUI,
     shiny,
     DT,
-    utils
+    utils,
+    readxl
 Suggests: 
     testthat

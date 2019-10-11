@@ -4,10 +4,13 @@
 \alias{create_metadata}
 \title{Extracting the metadata from one pdf file.}
 \usage{
-create_metadata(.file_path)
+create_metadata(.file_path, is_excel = FALSE)
 }
 \arguments{
 \item{.file_path}{A character vector of length one, indicating the path to a pdf file}
+
+\item{is_excel}{A logical, checking whether metadata should be
+extracted from an excel file or not. Default to false}
 }
 \value{
 A tibble

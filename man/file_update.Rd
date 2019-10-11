@@ -4,7 +4,8 @@
 \alias{file_update}
 \title{Update historic data using one file}
 \usage{
-file_update(.file_path, keepwide = FALSE, update = TRUE)
+file_update(.file_path, keepwide = FALSE, update = TRUE,
+  is_excel = FALSE)
 }
 \arguments{
 \item{.file_path}{A character vector of length One, path to one pdf file}
@@ -12,6 +13,8 @@ file_update(.file_path, keepwide = FALSE, update = TRUE)
 \item{keepwide}{Logical Should we keep final long or wide format?}
 
 \item{update}{Logical. Update with historical data or not?}
+
+\item{is_excel}{Logical. Should we update with excel or pdf file?}
 }
 \value{
 A tibble with updated data

@@ -4,10 +4,12 @@
 \alias{convert_file}
 \title{Converting one PDF text into tibble format}
 \usage{
-convert_file(.file_path)
+convert_file(.file_path, is_excel = FALSE)
 }
 \arguments{
 \item{.file_path}{A character vector of length one. The path to a pdf file}
+
+\item{is_excel}{A logical. Testing if we should update from excel or pdf file}
 }
 \value{
 A tibble
